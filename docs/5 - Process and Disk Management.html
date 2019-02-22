@@ -1,0 +1,1466 @@
+<html>
+                 <head>
+                   <meta charset="UTF-8">
+                   <meta name = "viewport" content = "width = device-width, initial-scale = 1, maximum-scale = 1">
+                   <style id="style">
+@font-face {
+  font-family: 'Lato';
+  src: url('file:///C:/Users/Super%20Panama%20World/AppData/Local/boost/app-0.11.15/resources/app/resources/fonts/Lato-Regular.woff2') format('woff2'), /* Modern Browsers */
+       url('file:///C:/Users/Super%20Panama%20World/AppData/Local/boost/app-0.11.15/resources/app/resources/fonts/Lato-Regular.woff') format('woff'), /* Modern Browsers */
+       url('file:///C:/Users/Super%20Panama%20World/AppData/Local/boost/app-0.11.15/resources/app/resources/fonts/Lato-Regular.ttf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+}
+@font-face {
+  font-family: 'Lato';
+  src: url('file:///C:/Users/Super%20Panama%20World/AppData/Local/boost/app-0.11.15/resources/app/resources/fonts/Lato-Black.woff2') format('woff2'), /* Modern Browsers */
+       url('file:///C:/Users/Super%20Panama%20World/AppData/Local/boost/app-0.11.15/resources/app/resources/fonts/Lato-Black.woff') format('woff'), /* Modern Browsers */
+       url('file:///C:/Users/Super%20Panama%20World/AppData/Local/boost/app-0.11.15/resources/app/resources/fonts/Lato-Black.ttf') format('truetype');
+  font-style: normal;
+  font-weight: 700;
+  text-rendering: optimizeLegibility;
+}
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Material Icons'),
+       local('MaterialIcons-Regular'),
+       url('file:///C:/Users/Super%20Panama%20World/AppData/Local/boost/app-0.11.15/resources/app/resources/fonts/MaterialIcons-Regular.woff2') format('woff2'),
+       url('file:///C:/Users/Super%20Panama%20World/AppData/Local/boost/app-0.11.15/resources/app/resources/fonts/MaterialIcons-Regular.woff') format('woff'),
+       url('file:///C:/Users/Super%20Panama%20World/AppData/Local/boost/app-0.11.15/resources/app/resources/fonts/MaterialIcons-Regular.ttf') format('truetype');
+}
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-family: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+body {
+  line-height: 1;
+  color: #000;
+  background: #fff;
+}
+ol,
+ul {
+  list-style: none;
+}
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  vertical-align: middle;
+}
+caption,
+th,
+td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+a img {
+  border: none;
+}
+body {
+  font-size: 16px;
+  padding: 15px;
+  font-family: helvetica, arial, sans-serif;
+  line-height: 1.6;
+  overflow-x: hidden;
+  background-color: #fff;
+}
+body .katex-display > .katex {
+  white-space: nowrap;
+}
+body .katex {
+  white-space: initial;
+}
+body .katex .katex-html {
+  display: -webkit-inline-box;
+  display: -moz-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-box;
+  display: inline-flex;
+}
+body .katex .mfrac>.vlist>span:nth-child(2) {
+  top: 0 !important;
+}
+body .katex-error {
+  background-color: #f2dede;
+  color: #a64444;
+  padding: 5px;
+  margin: -5px;
+  border-radius: 5px;
+}
+body .flowchart-error,
+body .sequence-error .chart-error {
+  background-color: #f2dede;
+  color: #a64444;
+  padding: 5px;
+  border-radius: 5px;
+  -webkit-box-pack: left;
+  -moz-box-pack: left;
+  -o-box-pack: left;
+  -ms-flex-pack: left;
+  -webkit-justify-content: left;
+  justify-content: left;
+}
+li label.taskListItem {
+  margin-left: -1.8em;
+}
+li label.taskListItem.checked {
+  text-decoration: line-through;
+  opacity: 0.5;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+  filter: alpha(opacity=50);
+}
+li.taskListItem.checked {
+  text-decoration: line-through;
+  opacity: 0.5;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+  filter: alpha(opacity=50);
+}
+div.math-rendered {
+  text-align: center;
+}
+.math-failed {
+  background-color: rgba(255,0,0,0.1);
+  color: #d90000;
+  padding: 5px;
+  margin: 5px 0;
+  border-radius: 5px;
+}
+sup {
+  position: relative;
+  top: -0.4em;
+  font-size: 0.8em;
+  vertical-align: top;
+}
+sub {
+  position: relative;
+  bottom: -0.4em;
+  font-size: 0.8em;
+  vertical-align: top;
+}
+a {
+  color: #2bac8f;
+  text-decoration: none;
+  padding: 5px;
+  border-radius: 5px;
+  margin: -5px;
+  -webkit-transition: 0.1s;
+  -moz-transition: 0.1s;
+  -o-transition: 0.1s;
+  -ms-transition: 0.1s;
+  transition: 0.1s;
+}
+a img {
+  vertical-align: sub;
+}
+a:hover {
+  color: #2eb899;
+  text-decoration: underline;
+  background-color: rgba(255,201,92,0.3);
+}
+a:visited {
+  color: #2bac8f;
+}
+hr {
+  border-top: none;
+  border-bottom: solid 1px #d0d0d0;
+  margin: 15px 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+  word-wrap: break-word;
+}
+h1 {
+  font-size: 2.55em;
+  padding-bottom: 0.3em;
+  line-height: 1.2em;
+  border-bottom: solid 1px #d0d0d0;
+  margin: 1em 0 0.44em;
+}
+h1:first-child {
+  margin-top: 0;
+}
+h2 {
+  font-size: 1.75em;
+  padding-bottom: 0.3em;
+  line-height: 1.225em;
+  border-bottom: solid 1px #d0d0d0;
+  margin: 1em 0 0.57em;
+}
+h2:first-child {
+  margin-top: 0;
+}
+h3 {
+  font-size: 1.5em;
+  line-height: 1.43em;
+  margin: 1em 0 0.66em;
+}
+h4 {
+  font-size: 1.25em;
+  line-height: 1.4em;
+  margin: 1em 0 0.8em;
+}
+h5 {
+  font-size: 1em;
+  line-height: 1.4em;
+  margin: 1em 0 1em;
+}
+h6 {
+  font-size: 1em;
+  line-height: 1.4em;
+  margin: 1em 0 1em;
+  color: #777;
+}
+p {
+  line-height: 1.6em;
+  margin: 0 0 1em;
+  white-space: pre-line;
+  word-wrap: break-word;
+}
+img {
+  cursor: zoom-in;
+  max-width: 100%;
+}
+strong,
+b {
+  font-weight: bold;
+}
+em,
+i {
+  font-style: italic;
+}
+s,
+del,
+strike {
+  text-decoration: line-through;
+}
+u {
+  text-decoration: underline;
+}
+blockquote {
+  border-left: solid 4px #3fb399;
+  margin: 0 0 1em;
+  padding: 0 25px;
+}
+ul {
+  list-style-type: disc;
+  padding-left: 2em;
+  margin-bottom: 1em;
+}
+ul li {
+  display: list-item;
+}
+ul li.taskListItem {
+  list-style: none;
+}
+ul li.taskListItem>input {
+  margin-left: -1.6em;
+}
+ul li.taskListItem>p {
+  margin-left: -1.8em;
+}
+ul li p {
+  margin: 0;
+}
+ul>li>ul,
+ul>li>ol {
+  margin: 0;
+}
+ul>li>ul {
+  list-style-type: circle;
+}
+ul>li>ul>li>ul {
+  list-style-type: square;
+}
+ol {
+  list-style-type: decimal;
+  padding-left: 2em;
+  margin-bottom: 1em;
+}
+ol li {
+  display: list-item;
+}
+ol li p {
+  margin: 0;
+}
+ol>li>ul,
+ol>li>ol {
+  margin: 0;
+}
+code {
+  padding: 0.2em 0.4em;
+  background-color: #f7f7f7;
+  border-radius: 3px;
+  font-size: 1em;
+  text-decoration: none;
+  margin-right: 2px;
+}
+pre {
+  padding: 0.5rem !important;
+  border: solid 1px #d1d1d1;
+  border-radius: 5px;
+  overflow-x: auto;
+  margin: 0 0 1rem;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  line-height: 1.4em;
+}
+pre code {
+  background-color: inherit;
+  margin: 0;
+  padding: 0;
+  border: none;
+  border-radius: 0;
+}
+pre.CodeMirror {
+  height: initial;
+  -webkit-box-lines: multiple;
+  -moz-box-lines: multiple;
+  -o-box-lines: multiple;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+pre.CodeMirror>code {
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  -o-box-flex: 1;
+  box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  overflow-x: auto;
+}
+pre.mermaid svg {
+  max-width: 100% !important;
+}
+pre>span.filename {
+  margin: -0.5rem 100% 0.5rem -0.5rem;
+  padding: 0.125rem 0.375rem;
+  background-color: #777;
+  color: #fff;
+}
+pre>span.filename:empty {
+  display: none;
+}
+pre>span.lineNumber {
+  display: none;
+  font-size: 1em;
+  padding: 0.5rem 0;
+  margin: -0.5rem 0.5rem -0.5rem -0.5rem;
+  border-right: 1px solid;
+  text-align: right;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+pre>span.lineNumber.CodeMirror-gutters {
+  position: initial;
+  top: initial;
+  left: initial;
+  min-height: 0 !important;
+}
+pre>span.lineNumber>span {
+  display: block;
+  padding: 0 0.5em 0;
+}
+table {
+  display: block;
+  width: 100%;
+  margin: 0 0 1em;
+  overflow-x: auto;
+}
+table thead tr {
+  background-color: #fff;
+}
+table thead th {
+  border-style: solid;
+  padding: 6px 13px;
+  line-height: 1.6;
+  border-width: 1px 0 2px 1px;
+  border-color: #d0d0d0;
+  font-weight: bold;
+}
+table thead th:last-child {
+  border-right: solid 1px #d0d0d0;
+}
+table tbody tr:nth-child(2n + 1) {
+  background-color: #f9f9f9;
+}
+table tbody tr:nth-child(2n) {
+  background-color: #fff;
+}
+table tbody td {
+  border-style: solid;
+  padding: 6px 13px;
+  line-height: 1.6;
+  border-width: 0 0 1px 1px;
+  border-color: #d0d0d0;
+}
+table tbody td:last-child {
+  border-right: solid 1px #d0d0d0;
+}
+kbd {
+  background-color: #fafbfc;
+  border: solid 1px #d0d0d0;
+  border-bottom-color: #888;
+  border-radius: 3px;
+  -webkit-box-shadow: inset 0 -1px 0 #959da5;
+  box-shadow: inset 0 -1px 0 #959da5;
+  display: inline-block;
+  font-size: 0.8em;
+  line-height: 1;
+  padding: 3px 5px;
+}
+.admonition.note,
+.admonition.hint,
+.admonition.danger,
+.admonition.caution,
+.admonition.error,
+.admonition.attention {
+  -webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
+  position: relative;
+  margin: 1.5625em 0;
+  padding: 0 1.2rem;
+  border-left: 0.4rem solid #448aff;
+  border-radius: 0.2rem;
+  overflow: auto;
+}
+html .admonition>:last-child {
+  margin-bottom: 1.2rem;
+}
+.admonition .admonition {
+  margin: 1em 0;
+}
+.admonition p {
+  margin-top: 0.5em;
+}
+.admonition.note>.admonition-title:before,
+.admonition.hint>.admonition-title:before,
+.admonition.danger>.admonition-title:before,
+.admonition.caution>.admonition-title:before,
+.admonition.error>.admonition-title:before,
+.admonition.attention>.admonition-title:before {
+  position: absolute;
+  left: 1.2rem;
+  font-family: "Material Icons";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+/* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+/* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+/* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+/* Support for IE. */
+  font-feature-settings: 'liga';
+}
+.admonition.note>.admonition-title,
+.admonition.hint>.admonition-title,
+.admonition.danger>.admonition-title,
+.admonition.caution>.admonition-title,
+.admonition.error>.admonition-title,
+.admonition.attention>.admonition-title {
+  margin: 0 -1.2rem;
+  padding: 0.8rem 1.2rem 0.8rem 4rem;
+  border-bottom: 0.1rem solid rgba(68,138,255,0.1);
+  background-color: rgba(68,138,255,0.1);
+  font-weight: 700;
+}
+.admonition>.admonition-title:last-child {
+  margin-bottom: 0;
+}
+.admonition.note {
+  border-left-color: #0288d1;
+}
+.admonition.note>.admonition-title {
+  border-bottom-color: 0.1rem solid rgba(2,136,209,0.2);
+  background-color: rgba(2,136,209,0.2);
+}
+.admonition.note>.admonition-title:before {
+  color: #0288d1;
+  content: "note";
+}
+.admonition.hint {
+  border-left-color: #009688;
+}
+.admonition.hint>.admonition-title {
+  border-bottom-color: 0.1rem solid rgba(0,150,136,0.2);
+  background-color: rgba(0,150,136,0.2);
+}
+.admonition.hint>.admonition-title:before {
+  color: #009688;
+  content: "info_outline";
+}
+.admonition.danger {
+  border-left-color: #c2185b;
+}
+.admonition.danger>.admonition-title {
+  border-bottom-color: 0.1rem solid rgba(194,24,91,0.2);
+  background-color: rgba(194,24,91,0.2);
+}
+.admonition.danger>.admonition-title:before {
+  color: #c2185b;
+  content: "block";
+}
+.admonition.caution {
+  border-left-color: #ffa726;
+}
+.admonition.caution>.admonition-title {
+  border-bottom-color: 0.1rem solid rgba(255,167,38,0.2);
+  background-color: rgba(255,167,38,0.2);
+}
+.admonition.caution>.admonition-title:before {
+  color: #ffa726;
+  content: "warning";
+}
+.admonition.error {
+  border-left-color: #d32f2f;
+}
+.admonition.error>.admonition-title {
+  border-bottom-color: 0.1rem solid rgba(211,47,47,0.2);
+  background-color: rgba(211,47,47,0.2);
+}
+.admonition.error>.admonition-title:before {
+  color: #d32f2f;
+  content: "error_outline";
+}
+.admonition.attention {
+  border-left-color: #455a64;
+}
+.admonition.attention>.admonition-title {
+  border-bottom-color: 0.1rem solid rgba(69,90,100,0.2);
+  background-color: rgba(69,90,100,0.2);
+}
+.admonition.attention>.admonition-title:before {
+  color: #455a64;
+  content: "priority_high";
+}
+dl {
+  margin: 2rem 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  width: 100%;
+  -webkit-box-lines: multiple;
+  -moz-box-lines: multiple;
+  -o-box-lines: multiple;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-align: start;
+  -moz-box-align: start;
+  -o-box-align: start;
+  -ms-flex-align: start;
+  -webkit-align-items: flex-start;
+  align-items: flex-start;
+  border-bottom: 1px solid #d0d0d0;
+  background-color: #fff;
+}
+dt {
+  border-top: 1px solid #d0d0d0;
+  font-weight: bold;
+  text-align: right;
+  overflow: hidden;
+  -webkit-flex-basis: 20%;
+  flex-basis: 20%;
+  padding: 0.4rem 0.9rem;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+dd {
+  border-top: 1px solid #d0d0d0;
+  -webkit-flex-basis: 80%;
+  flex-basis: 80%;
+  padding: 0.4rem 0.9rem;
+  min-height: 2.5rem;
+  background-color: #fff;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+dd + dd {
+  margin-left: 20%;
+}
+pre.fence {
+  -webkit-box-lines: multiple;
+  -moz-box-lines: multiple;
+  -o-box-lines: multiple;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+pre.fence .chart,
+pre.fence .flowchart,
+pre.fence .mermaid,
+pre.fence .sequence {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -o-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  background-color: #fff;
+  max-width: 100%;
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  -o-box-flex: 1;
+  -ms-box-flex: 1;
+  box-flex: 1;
+  -webkit-flex-grow: 1;
+  flex-grow: 1;
+}
+pre.fence .chart canvas,
+pre.fence .flowchart canvas,
+pre.fence .mermaid canvas,
+pre.fence .sequence canvas,
+pre.fence .chart svg,
+pre.fence .flowchart svg,
+pre.fence .mermaid svg,
+pre.fence .sequence svg {
+  max-width: 100% !important;
+}
+pre.fence .gallery {
+  width: 100%;
+  height: 50vh;
+}
+pre.fence .gallery .carousel .carousel-main img {
+  min-width: auto;
+  max-width: 100%;
+  min-height: auto;
+  max-height: 100%;
+}
+pre.fence .gallery .carousel .carousel-footer::-webkit-scrollbar-corner {
+  background-color: transparent;
+}
+pre.fence .gallery .carousel .carousel-main,
+pre.fence .gallery .carousel .carousel-footer {
+  background-color: #fff;
+}
+pre.fence .gallery .carousel .prev,
+pre.fence .gallery .carousel .next {
+  color: #333;
+  background-color: rgba(0,0,0,0.3);
+}
+body[data-theme="dark"] {
+  color: #f9f9f9;
+  border-color: #444b59;
+  background-color: #2c3033;
+}
+body[data-theme="dark"] a:hover {
+  background-color: rgba(90,214,186,0.2) !important;
+}
+body[data-theme="dark"] code {
+  color: #ea6730;
+  border-color: #3d4450;
+  background-color: #363a3e;
+}
+body[data-theme="dark"] pre {
+  border-color: #474f5c;
+}
+body[data-theme="dark"] pre code {
+  background-color: transparent;
+}
+body[data-theme="dark"] label.taskListItem {
+  background-color: #2c3033;
+}
+body[data-theme="dark"] table thead tr {
+  background-color: #282b2e;
+}
+body[data-theme="dark"] table thead th {
+  border-color: #444b59;
+}
+body[data-theme="dark"] table thead th:last-child {
+  border-right: solid 1px #444b59;
+}
+body[data-theme="dark"] table tbody tr:nth-child(2n + 1) {
+  background-color: #2c3033;
+}
+body[data-theme="dark"] table tbody tr:nth-child(2n) {
+  background-color: #282b2e;
+}
+body[data-theme="dark"] table tbody td {
+  border-color: #444b59;
+}
+body[data-theme="dark"] table tbody td:last-child {
+  border-right: solid 1px #444b59;
+}
+body[data-theme="dark"] kbd {
+  background-color: #444b59;
+  color: #f9f9f9;
+}
+body[data-theme="dark"] dl {
+  border-color: #444b59;
+  background-color: #282b2e;
+}
+body[data-theme="dark"] dt {
+  border-color: #444b59;
+}
+body[data-theme="dark"] dd {
+  border-color: #444b59;
+  background-color: #2c3033;
+}
+body[data-theme="dark"] pre.fence .gallery .carousel-main,
+body[data-theme="dark"] pre.fence .gallery .carousel-footer {
+  background-color: #2c3033;
+}
+body[data-theme="dark"] pre.fence .gallery .prev,
+body[data-theme="dark"] pre.fence .gallery .next {
+  color: #ddd;
+  background-color: #3a404c;
+}
+body[data-theme="solarized-dark"] {
+  color: #93a1a1;
+  border-color: #444b59;
+  background-color: #073642;
+}
+body[data-theme="solarized-dark"] table thead tr {
+  background-color: #06313b;
+}
+body[data-theme="solarized-dark"] table thead th {
+  border-color: #444b59;
+}
+body[data-theme="solarized-dark"] table thead th:last-child {
+  border-right: solid 1px #444b59;
+}
+body[data-theme="solarized-dark"] table tbody tr:nth-child(2n + 1) {
+  background-color: #073642;
+}
+body[data-theme="solarized-dark"] table tbody tr:nth-child(2n) {
+  background-color: #06313b;
+}
+body[data-theme="solarized-dark"] table tbody td {
+  border-color: #444b59;
+}
+body[data-theme="solarized-dark"] table tbody td:last-child {
+  border-right: solid 1px #444b59;
+}
+body[data-theme="solarized-dark"] dl {
+  border-color: #444b59;
+  background-color: #06313b;
+}
+body[data-theme="solarized-dark"] dt {
+  border-color: #444b59;
+}
+body[data-theme="solarized-dark"] dd {
+  border-color: #444b59;
+  background-color: #073642;
+}
+body[data-theme="solarized-dark"] pre.fence .gallery .carousel-main,
+body[data-theme="solarized-dark"] pre.fence .gallery .carousel-footer {
+  background-color: #073642;
+}
+body[data-theme="solarized-dark"] pre.fence .gallery .prev,
+body[data-theme="solarized-dark"] pre.fence .gallery .next {
+  color: #93a1a1;
+  background-color: #002b36;
+}
+body[data-theme="monokai"] {
+  color: #f8f8f2;
+  border-color: #444b59;
+  background-color: #272822;
+}
+body[data-theme="monokai"] table thead tr {
+  background-color: #23241f;
+}
+body[data-theme="monokai"] table thead th {
+  border-color: #444b59;
+}
+body[data-theme="monokai"] table thead th:last-child {
+  border-right: solid 1px #444b59;
+}
+body[data-theme="monokai"] table tbody tr:nth-child(2n + 1) {
+  background-color: #272822;
+}
+body[data-theme="monokai"] table tbody tr:nth-child(2n) {
+  background-color: #23241f;
+}
+body[data-theme="monokai"] table tbody td {
+  border-color: #444b59;
+}
+body[data-theme="monokai"] table tbody td:last-child {
+  border-right: solid 1px #444b59;
+}
+body[data-theme="monokai"] kbd {
+  background-color: #1e2127;
+}
+body[data-theme="monokai"] dl {
+  border-color: #444b59;
+  background-color: #23241f;
+}
+body[data-theme="monokai"] dt {
+  border-color: #444b59;
+}
+body[data-theme="monokai"] dd {
+  border-color: #444b59;
+  background-color: #272822;
+}
+body[data-theme="monokai"] pre.fence .gallery .carousel-main,
+body[data-theme="monokai"] pre.fence .gallery .carousel-footer {
+  background-color: #272822;
+}
+body[data-theme="monokai"] pre.fence .gallery .prev,
+body[data-theme="monokai"] pre.fence .gallery .next {
+  color: #fff;
+  background-color: #373831;
+}
+body[data-theme="dracula"] {
+  color: #f8f8f2;
+  border-color: #444b59;
+  background-color: #282a36;
+}
+body[data-theme="dracula"] table thead tr {
+  background-color: #242631;
+}
+body[data-theme="dracula"] table thead th {
+  border-color: #444b59;
+}
+body[data-theme="dracula"] table thead th:last-child {
+  border-right: solid 1px #444b59;
+}
+body[data-theme="dracula"] table tbody tr:nth-child(2n + 1) {
+  background-color: #282a36;
+}
+body[data-theme="dracula"] table tbody tr:nth-child(2n) {
+  background-color: #242631;
+}
+body[data-theme="dracula"] table tbody td {
+  border-color: #444b59;
+}
+body[data-theme="dracula"] table tbody td:last-child {
+  border-right: solid 1px #444b59;
+}
+body[data-theme="dracula"] kbd {
+  background-color: #1e2127;
+}
+body[data-theme="dracula"] dl {
+  border-color: #444b59;
+  background-color: #242631;
+}
+body[data-theme="dracula"] dt {
+  border-color: #444b59;
+}
+body[data-theme="dracula"] dd {
+  border-color: #444b59;
+  background-color: #282a36;
+}
+body[data-theme="dracula"] pre.fence .gallery .carousel-main,
+body[data-theme="dracula"] pre.fence .gallery .carousel-footer {
+  background-color: #282a36;
+}
+body[data-theme="dracula"] pre.fence .gallery .prev,
+body[data-theme="dracula"] pre.fence .gallery .next {
+  color: #f8f8f2;
+  background-color: #44475a;
+}
+/*# sourceMappingURL=browser/components/markdown.css.map */
+
+body {
+  font-family: 'Segoe UI','meiryo','Microsoft YaHei','helvetica','arial','sans-serif';
+  font-size: 14px;
+  false
+}
+@media print {
+  body {
+    padding-bottom: initial;
+  }
+}
+code {
+  font-family: 'Consolas','Monaco','Menlo','Ubuntu Mono','Consolas','source-code-pro','monospace';
+  background-color: rgba(0,0,0,0.04);
+}
+.lineNumber {
+  display: block !important;
+  font-family: 'Consolas','Monaco','Menlo','Ubuntu Mono','Consolas','source-code-pro','monospace';
+}
+
+.clipboardButton {
+  color: rgba(147,147,149,0.8);;
+  fill: rgba(147,147,149,1);;
+  border-radius: 50%;
+  margin: 0px 10px;
+  border: none;
+  background-color: transparent;
+  outline: none;
+  height: 15px;
+  width: 15px;
+  cursor: pointer;
+}
+
+.clipboardButton:hover {
+  transition: 0.2s;
+  color: #939395;
+  fill: #939395;
+  background-color: rgba(0,0,0,0.1);
+}
+
+h1, h2 {
+  border: none;
+}
+
+h1 {
+  padding-bottom: 4px;
+  margin: 1em 0 8px;
+}
+
+h2 {
+  padding-bottom: 0.2em;
+  margin: 1em 0 0.37em;
+}
+
+body p {
+  white-space: normal;
+}
+
+@media print {
+  body[data-theme="white"] {
+    color: #000;
+    background-color: #fff;
+  }
+  .clipboardButton {
+    display: none
+  }
+}
+
+
+</style>
+                   <link rel="stylesheet" href="css/lucario.css"><link rel="stylesheet" href="css/katex.min.css"><link rel="stylesheet" href="css/codemirror.css"><link rel="stylesheet" href="css/main.min.css">
+                 </head>
+                 <body><h1 id="5---Process-and-Disk-Management" data-line="0">5 - Process and Disk Management</h1>
+<br />
+<p data-line="3">We have already seen how to look at the processes at a point in time in <kbd>0 - Basic Unix Commands</kbd></p>
+<h3 id="Real-time-Monitoring" data-line="5">Real-time Monitoring</h3>
+<p data-line="7">The <code>top</code> command will show a real-time display of all running processes.</p>
+<pre class="code CodeMirror" data-line="9">
+        <span class="filename"></span>
+        <span class="lineNumber CodeMirror-gutters"><span class="CodeMirror-linenumber">1</span><span class="CodeMirror-linenumber">2</span><span class="CodeMirror-linenumber">3</span><span class="CodeMirror-linenumber">4</span><span class="CodeMirror-linenumber">5</span><span class="CodeMirror-linenumber">6</span><span class="CodeMirror-linenumber">7</span><span class="CodeMirror-linenumber">8</span><span class="CodeMirror-linenumber">9</span><span class="CodeMirror-linenumber">10</span><span class="CodeMirror-linenumber">11</span><span class="CodeMirror-linenumber">12</span><span class="CodeMirror-linenumber">13</span><span class="CodeMirror-linenumber">14</span><span class="CodeMirror-linenumber">15</span><span class="CodeMirror-linenumber">16</span></span>
+        <code class="bash">top - 18:51:07 up 70 days,  1:09,  0 users,  load average: 2.23, 1.62, 1.56
+Tasks:   9 total,   2 running,   7 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  6.2 us,  9.0 sy,  0.0 ni, 83.3 id,  0.0 wa,  0.0 hi,  1.5 si,  0.0 st
+KiB Mem:  53595384 total, 49824380 used,  3771004 free,  6849380 buffers
+KiB Swap: 52428796 total,   983212 used, 51445584 free. 29063192 cached Mem
+
+    PID USER      PR  NI    VIRT    RES    SHR S  %CPU %MEM     TIME+ COMMAND                                       
+    175 ubuntu    20   0 1243464  51616  15952 R   2.4  0.1   0:01.26 vfs-worker {&quot;pi                               
+      1 root      20   0    1104      4      0 S   0.0  0.0   0:00.04 tini                                          
+      7 root      20   0    4052    192    152 S   0.0  0.0   0:00.00 micro-inetd                                   
+    174 root      20   0   19376   2116   1924 S   0.0  0.0   0:00.17 dropbear                                      
+   1071 ubuntu    20   0  123736   2708   2512 S   0.0  0.0   0:00.00 tmux                                          
+   1074 ubuntu    20   0  132564   3568   2856 S   0.0  0.0   0:00.04 tmux                                          
+   1075 ubuntu    20   0   11276   2676   2492 S   0.0  0.0   0:00.00 bash                                          
+   1076 ubuntu    20   0   29124  12884   3172 S   0.0  0.0   0:00.23 bash                                          
+   1563 ubuntu    20   0   23644   2736   2404 R   0.0  0.0   0:00.01 top     
+</code>
+      </pre><ul>
+<li data-line="28">In the first row, we have current time, uptime, and load average for 1, 5, and 15 minutes.</li>
+<li data-line="29">In the second row, we have task stats, where <code>zombie</code> refers to finished processes waiting for their parent to respond.</li>
+<li data-line="30">In the third row, we have cpu statistics with the meanings:</li>
+</ul>
+<table data-line="33">
+<thead>
+<tr>
+<th>Term</th>
+<th>Meaning</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>us</td>
+<td>user time</td>
+<td>CPU time spent in user space</td>
+</tr>
+<tr>
+<td>sy</td>
+<td>system time</td>
+<td>kernel space</td>
+</tr>
+<tr>
+<td>ni</td>
+<td>nice time</td>
+<td>low priority processes</td>
+</tr>
+<tr>
+<td>id</td>
+<td>idle time</td>
+<td>idling</td>
+</tr>
+<tr>
+<td>wa</td>
+<td>io wait time</td>
+<td>wait on disk</td>
+</tr>
+<tr>
+<td>hi</td>
+<td>hardware irq</td>
+<td>handling hardware interrupts</td>
+</tr>
+<tr>
+<td>si</td>
+<td>software irq</td>
+<td>handling software interrupts</td>
+</tr>
+<tr>
+<td>st</td>
+<td>steal time</td>
+<td>time used by processes other than the linux virutal machine</td>
+</tr>
+</tbody>
+<tbody></tbody>
+</table>
+<ul>
+<li data-line="44">The last two rows show how much physical and swap memory is being used (for virtual memory)</li>
+</ul>
+<br />
+<h3 id="Process-Signals" data-line="48">Process Signals</h3>
+<p data-line="50">Most processes communicate and act using a set of standard process systems, which a well-written application would receive and act.</p>
+<table data-line="52">
+<thead>
+<tr>
+<th>Signal</th>
+<th>Name</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>HUP</td>
+<td>Hang up</td>
+</tr>
+<tr>
+<td>2</td>
+<td>INT</td>
+<td>Interrupt</td>
+</tr>
+<tr>
+<td>3</td>
+<td>QUIT</td>
+<td>Quit</td>
+</tr>
+<tr>
+<td>9</td>
+<td>KILL</td>
+<td>Terminates program without condition</td>
+</tr>
+<tr>
+<td>11</td>
+<td>SEGV</td>
+<td>Segment Violation</td>
+</tr>
+<tr>
+<td>15</td>
+<td>TERM</td>
+<td>Terminates with condition (if possible)</td>
+</tr>
+<tr>
+<td>17</td>
+<td>STOP</td>
+<td>Stops without condition (not terminate)</td>
+</tr>
+<tr>
+<td>18</td>
+<td>TSTP</td>
+<td>Stops but runs in background</td>
+</tr>
+<tr>
+<td>19</td>
+<td>CONT</td>
+<td>Resume after STOP or TSTP</td>
+</tr>
+</tbody>
+<tbody></tbody>
+</table>
+<br />
+<h4 id="-kill" data-line="66">$ kill</h4>
+<p data-line="68">The <code>kill</code> command sends a <code>TERM</code> signal to a process using a Process ID (PID).</p>
+<pre class="code CodeMirror" data-line="70">
+        <span class="filename"></span>
+        <span class="lineNumber CodeMirror-gutters"><span class="CodeMirror-linenumber">1</span></span>
+        <code class="bash">$ kill [options] [PID]
+</code>
+      </pre><pre class="code CodeMirror" data-line="74">
+        <span class="filename"></span>
+        <span class="lineNumber CodeMirror-gutters"><span class="CodeMirror-linenumber">1</span></span>
+        <code class="bash">$ kill 1234
+</code>
+      </pre><p data-line="78">If the process is runaway, then it will likely not respond to <code>TERM</code>.<br />
+In such conditions, you can use other signals using the <code>-s</code> option.</p>
+<pre class="code CodeMirror" data-line="81">
+        <span class="filename"></span>
+        <span class="lineNumber CodeMirror-gutters"><span class="CodeMirror-linenumber">1</span></span>
+        <code class="bash">$ kill -s HUP 1234
+</code>
+      </pre><br />
+<h4 id="-killall" data-line="87">$ killall</h4>
+<p data-line="89">The <code>killall</code> command can take a wildcard pattern and terminate all processes with that name.</p>
+<pre class="code CodeMirror" data-line="91">
+        <span class="filename"></span>
+        <span class="lineNumber CodeMirror-gutters"><span class="CodeMirror-linenumber">1</span></span>
+        <code class="bash">$ killall http*
+</code>
+      </pre><p data-line="95"><br /><br /></p>
+<hr />
+<h3 id="Mounting" data-line="99">Mounting</h3>
+<p data-line="101">When external drives are plugged in, they must be mounted to the virtual directory.</p>
+<p data-line="103">Most distros automatically mount flash drives to <code>/media/disk/</code>.</p>
+<p data-line="105">However, if that is not the case, it must be manually mounted with the <code>mount</code> command.</p>
+<br />
+<h4 id="-mount" data-line="109">$ mount</h4>
+<p data-line="111">The basic form is:</p>
+<pre class="code CodeMirror" data-line="112">
+        <span class="filename"></span>
+        <span class="lineNumber CodeMirror-gutters"><span class="CodeMirror-linenumber">1</span></span>
+        <code class="bash">mount -t [media type] [device name] [directory]
+</code>
+      </pre><p data-line="116">Before mounting, the drives will be in the <code>/dev</code> folder.</p>
+<p data-line="118">Some common media types include:</p>
+<ul>
+<li data-line="119"><strong>vfat</strong>: Window’s system for flash drives</li>
+<li data-line="120"><strong>ntfs</strong>: Window’s advanced file system</li>
+<li data-line="121"><strong>iso9660</strong>: Commonly used for CDs</li>
+</ul>
+<p data-line="123">A full example of a mount:</p>
+<pre class="code CodeMirror" data-line="124">
+        <span class="filename"></span>
+        <span class="lineNumber CodeMirror-gutters"><span class="CodeMirror-linenumber">1</span></span>
+        <code class="bash">mount -t vfat /dev/sdb1 /media/disk
+</code>
+      </pre><br />
+<h4 id="-umount" data-line="130">$ umount</h4>
+<p data-line="132">To unmount a drive, use the <code>umount</code> command (no n).</p>
+<pre class="code CodeMirror" data-line="133">
+        <span class="filename"></span>
+        <span class="lineNumber CodeMirror-gutters"><span class="CodeMirror-linenumber">1</span></span>
+        <code class="bash">umount [directory || device]
+</code>
+      </pre><p data-line="136">This allows for both the directory or device name.<br />
+For example:</p>
+<pre class="code CodeMirror" data-line="138">
+        <span class="filename"></span>
+        <span class="lineNumber CodeMirror-gutters"><span class="CodeMirror-linenumber">1</span></span>
+        <code class="bash">umount /media/disk
+</code>
+      </pre><p data-line="141">or</p>
+<pre class="code CodeMirror" data-line="142">
+        <span class="filename"></span>
+        <span class="lineNumber CodeMirror-gutters"><span class="CodeMirror-linenumber">1</span></span>
+        <code class="bash">umount /dev/sdb1
+</code>
+      </pre><br />
+<h4 id="-df" data-line="148">$ df</h4>
+<p data-line="150">To view available disk space for each device, use the <code>df</code> command.</p>
+<pre class="code CodeMirror" data-line="152">
+        <span class="filename"></span>
+        <span class="lineNumber CodeMirror-gutters"><span class="CodeMirror-linenumber">1</span><span class="CodeMirror-linenumber">2</span><span class="CodeMirror-linenumber">3</span><span class="CodeMirror-linenumber">4</span></span>
+        <code class="bash">Filesystem                1K-blocks      Used Available Use% Mounted on
+none                        2234668     51828   2047724   3% /
+tmpfs                      26797692         0  26797692   0% /dev
+tmpfs                      26797692         0  26797692   0% /sys/fs/cgroup
+</code>
+      </pre><p data-line="159">Instead of 1K-blocks, we can view with megabytes and gigabytes using the <code>-h</code> option.</p>
+<pre class="code CodeMirror" data-line="161">
+        <span class="filename"></span>
+        <span class="lineNumber CodeMirror-gutters"><span class="CodeMirror-linenumber">1</span><span class="CodeMirror-linenumber">2</span><span class="CodeMirror-linenumber">3</span><span class="CodeMirror-linenumber">4</span></span>
+        <code class="bash">Filesystem                1K-blocks      Used Available Use% Mounted on
+none                      2.2G   51M  2.0G   3% /
+tmpfs                      26G     0   26G   0% /dev
+tmpfs                      26G     0   26G   0% /sys/fs/cgroup
+</code>
+      </pre><br />
+<h4 id="-du" data-line="170">$ du</h4>
+<p data-line="172">The <code>du</code> command recursively displays all files from the current directory, along with the amount of disk blocks each directory uses. This can be used to find which directories are taking all the space.</p>
+<p data-line="174">Some common flags include <code>-c</code> to get a grand total, <code>-h</code> for human-readable (in k,m,g bytes), and <code>-s</code> for a summary.</p>
+<p data-line="176">For example (just a small part of the listing):</p>
+<pre class="code CodeMirror" data-line="177">
+        <span class="filename"></span>
+        <span class="lineNumber CodeMirror-gutters"><span class="CodeMirror-linenumber">1</span><span class="CodeMirror-linenumber">2</span><span class="CodeMirror-linenumber">3</span><span class="CodeMirror-linenumber">4</span><span class="CodeMirror-linenumber">5</span><span class="CodeMirror-linenumber">6</span><span class="CodeMirror-linenumber">7</span><span class="CodeMirror-linenumber">8</span><span class="CodeMirror-linenumber">9</span><span class="CodeMirror-linenumber">10</span><span class="CodeMirror-linenumber">11</span><span class="CodeMirror-linenumber">12</span><span class="CodeMirror-linenumber">13</span><span class="CodeMirror-linenumber">14</span><span class="CodeMirror-linenumber">15</span><span class="CodeMirror-linenumber">16</span><span class="CodeMirror-linenumber">17</span><span class="CodeMirror-linenumber">18</span><span class="CodeMirror-linenumber">19</span><span class="CodeMirror-linenumber">20</span><span class="CodeMirror-linenumber">21</span><span class="CodeMirror-linenumber">22</span></span>
+        <code class="bash">...
+28K     ./Express/node_modules/etag
+24K     ./Express/node_modules/encodeurl
+44K     ./Express/node_modules/safe-buffer
+20K     ./Express/node_modules/destroy
+28K     ./Express/node_modules/merge-descriptors
+24K     ./Express/node_modules/bytes
+24K     ./Express/node_modules/range-parser
+28K     ./Express/node_modules/finalhandler
+64K     ./Express/node_modules/qs/test
+36K     ./Express/node_modules/qs/lib
+24K     ./Express/node_modules/qs/dist
+180K    ./Express/node_modules/qs
+12K     ./Express/node_modules/express/lib/middleware
+32K     ./Express/node_modules/express/lib/router
+124K    ./Express/node_modules/express/lib
+260K    ./Express/node_modules/express
+20K     ./Express/node_modules/raw-body/node_modules/setprototypeof
+8.0K    ./Express/node_modules/raw-body/node_modules/depd/lib/browser
+16K     ./Express/node_modules/raw-body/node_modules/depd/lib/compat
+28K     ./Express/node_modules/raw-body/node_modules/depd/lib
+...
+</code>
+      </pre><p data-line="202"><br /><br /></p>
+<hr />
+<h3 id="Working-with-Files" data-line="206">Working with Files</h3>
+<h4 id="Sorting-Files" data-line="208">Sorting Files</h4>
+<p data-line="210">The <code>sort</code> command takes in a filename and outputs a sorted version of it (line by line).</p>
+<p data-line="212">It sorts alphabetically, so for cases such as numbers or months, other parameters must be used.<br />
+Some include:</p>
+<ul>
+<li data-line="214"><code>-n</code> for numbers</li>
+<li data-line="215"><code>-M</code> for three letter months</li>
+<li data-line="216"><code>-f</code> ignores case</li>
+<li data-line="217"><code>-r</code> print in reverse order</li>
+<li data-line="218"><code>-u</code> ignore repeat lines</li>
+</ul>
+<p data-line="220">The parameters <code>-k</code> and <code>-t</code> can be used for sorting a certain column of character-separated lines, such as <code>csv</code>s, or comma-separated value sheets.</p>
+<pre class="code CodeMirror" data-line="222">
+        <span class="filename"></span>
+        <span class="lineNumber CodeMirror-gutters"><span class="CodeMirror-linenumber">1</span></span>
+        <code class="bash">sort -t ',' -k 3 -n /example/csvfile
+</code>
+      </pre><p data-line="226"><code>-t</code> takes the character to delimit by, and <code>-k</code> takes the column number (which in this case, is a numerical column)</p>
+<p data-line="228">We can apply this command to the output of our previous command <code>du</code>:</p>
+<pre class="code CodeMirror" data-line="230">
+        <span class="filename"></span>
+        <span class="lineNumber CodeMirror-gutters"><span class="CodeMirror-linenumber">1</span><span class="CodeMirror-linenumber">2</span><span class="CodeMirror-linenumber">3</span><span class="CodeMirror-linenumber">4</span><span class="CodeMirror-linenumber">5</span><span class="CodeMirror-linenumber">6</span><span class="CodeMirror-linenumber">7</span><span class="CodeMirror-linenumber">8</span><span class="CodeMirror-linenumber">9</span><span class="CodeMirror-linenumber">10</span><span class="CodeMirror-linenumber">11</span><span class="CodeMirror-linenumber">12</span><span class="CodeMirror-linenumber">13</span><span class="CodeMirror-linenumber">14</span><span class="CodeMirror-linenumber">15</span><span class="CodeMirror-linenumber">16</span><span class="CodeMirror-linenumber">17</span><span class="CodeMirror-linenumber">18</span></span>
+        <code class="bash">exampleuser:~/workspace/Express/node_modules $ du -h | sort -nr
+416K    ./iconv-lite
+348K    ./iconv-lite/encodings
+260K    ./express
+232K    ./iconv-lite/encodings/tables
+184K    ./mime-db
+180K    ./qs
+164K    ./raw-body
+136K    ./ipaddr.js
+124K    ./raw-body/node_modules
+124K    ./express/lib
+112K    ./debug
+88K     ./body-parser
+68K     ./raw-body/node_modules/depd
+68K     ./mime
+68K     ./depd
+64K     ./qs/test
+...
+</code>
+      </pre><br />
+<h3 id="File-Compression" data-line="253">File Compression</h3>
+<p data-line="255">Compression is taking files and turning them into smaller files. Compressed files, as such, must be uncompressed first before they can be used.</p>
+<p data-line="257">Linux compression utilities include:</p>
+<table data-line="258">
+<thead>
+<tr>
+<th>Utility</th>
+<th>File extension</th>
+<th>Info</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>bzip2</td>
+<td>.bz2</td>
+<td>Burrows-Wheeler block sorting and Huffman coding</td>
+</tr>
+<tr>
+<td>compress</td>
+<td>.Z</td>
+<td>Original Unix compression, no longer used</td>
+</tr>
+<tr>
+<td>gzip</td>
+<td>.gz</td>
+<td>GNU’s compression util using Lempel-Ziv coding. Most popular.</td>
+</tr>
+<tr>
+<td>zip</td>
+<td>.zip</td>
+<td>Unix version of Window’s style zip</td>
+</tr>
+</tbody>
+<tbody></tbody>
+</table>
+<p data-line="265">To <code>gzip</code> data, simply use the <code>gzip</code> command.</p>
+<pre class="code CodeMirror" data-line="266">
+        <span class="filename"></span>
+        <span class="lineNumber CodeMirror-gutters"><span class="CodeMirror-linenumber">1</span></span>
+        <code class="bash">gzip [filename]
+</code>
+      </pre><p data-line="270">Note that the zipped file will replace the original.</p>
+<ul>
+<li data-line="272">To view the gzipped file, use <code>gzcat</code>.</li>
+<li data-line="273">To uncompressing the file, use <code>gunzip</code>.</li>
+</ul>
+<p data-line="275">For example:</p>
+<pre class="code CodeMirror" data-line="276">
+        <span class="filename"></span>
+        <span class="lineNumber CodeMirror-gutters"><span class="CodeMirror-linenumber">1</span><span class="CodeMirror-linenumber">2</span><span class="CodeMirror-linenumber">3</span><span class="CodeMirror-linenumber">4</span><span class="CodeMirror-linenumber">5</span></span>
+        <code class="bash">exampleuser:~/documents $ ls
+test
+exampleuser:~/documents $ gzip test
+exampleuser:~/documents $ ls
+test.gz
+</code>
+      </pre><p data-line="284">You can also use wildcards to compress more than one file.</p>
+<br />
+<h3 id="File-Archiving" data-line="288">File Archiving</h3>
+<p data-line="290">Archiving is taking multiple files and turning it into one file. Usually on Windows, compression and archving is done in one step with zip. However, on Linux the process is separate.</p>
+<br />
+<p data-line="294">**To archive multiple files, we use the <code>tar</code> command. **</p>
+<pre class="code CodeMirror" data-line="295">
+        <span class="filename"></span>
+        <span class="lineNumber CodeMirror-gutters"><span class="CodeMirror-linenumber">1</span></span>
+        <code class="bash">tar [command flag] -f [filename]...
+</code>
+      </pre><p data-line="299"><strong>Parameter order matters!</strong>. For example, <code>-f</code> must be followed by the filename.<br />
+<br /></p>
+<p data-line="302"><strong>To archive multiple files, we use the flags <code>-cf [output file] [file1] [file2] ...</code>.</strong></p>
+<ul>
+<li data-line="303"><code>-c</code>: Create file (command flag)</li>
+<li data-line="304"><code>-f</code>: Use file</li>
+<li data-line="305"><code>-v</code>: Verboose mode</li>
+</ul>
+<pre class="code CodeMirror" data-line="306">
+        <span class="filename"></span>
+        <span class="lineNumber CodeMirror-gutters"><span class="CodeMirror-linenumber">1</span></span>
+        <code class="bash">tar -cvf test.tar test1 testdirectory/
+</code>
+      </pre><br />
+<p data-line="312"><strong>To list the contents of a tar file, we can use the flags <code>-tf [tar file]</code>.</strong></p>
+<ul>
+<li data-line="313"><code>-t</code>: List contents (command flag)</li>
+<li data-line="314"><code>-f</code>: Use file</li>
+<li data-line="315"><code>-v</code>: Verboose mode (optional) (similar to ls -l)</li>
+</ul>
+<pre class="code CodeMirror" data-line="317">
+        <span class="filename"></span>
+        <span class="lineNumber CodeMirror-gutters"><span class="CodeMirror-linenumber">1</span></span>
+        <code class="bash">tar -tf test.tar
+</code>
+      </pre><br />
+<p data-line="323"><strong>To extract archived files to the current directory, use <code>-xf [tar file]</code>.</strong></p>
+<ul>
+<li data-line="324"><code>-x</code>: Extract files (command flag)</li>
+<li data-line="325"><code>-f</code>: Use file</li>
+<li data-line="326"><code>-v</code>: Verboose mode</li>
+</ul>
+<pre class="code CodeMirror" data-line="328">
+        <span class="filename"></span>
+        <span class="lineNumber CodeMirror-gutters"><span class="CodeMirror-linenumber">1</span></span>
+        <code class="bash">tar -xvf test.tar
+</code>
+      </pre><br />
+<p data-line="333">A common file type is <code>.tar.gz</code> or <code>.tgz</code>. This is a tar file that has been gzipped.<br />
+For example using:</p>
+<pre class="code CodeMirror" data-line="335">
+        <span class="filename"></span>
+        <span class="lineNumber CodeMirror-gutters"><span class="CodeMirror-linenumber">1</span></span>
+        <code class="bash">gzip test.tar
+</code>
+      </pre><p data-line="338">will give you <code>test.tar.gz</code>.</p>
+<p data-line="340"><strong>To extract tar and gzipped files into the directory, use <code>-zxf [tar file]</code>.</strong></p>
+<ul>
+<li data-line="341"><code>-z</code>: Redirect output to <code>gzip</code> utility</li>
+<li data-line="342"><code>-x</code>: Extract files (command flag)</li>
+<li data-line="343"><code>-f</code>: Use file</li>
+<li data-line="344"><code>-v</code>: Verboose mode</li>
+</ul>
+<pre class="code CodeMirror" data-line="345">
+        <span class="filename"></span>
+        <span class="lineNumber CodeMirror-gutters"><span class="CodeMirror-linenumber">1</span></span>
+        <code class="bash">tar -zxvf test.tar.gz
+</code>
+      </pre></body>
+              </html>
